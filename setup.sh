@@ -2,7 +2,7 @@
 
 cp bash/.* ~/
 cp vim/.vimrc ~/
-cp bin ~/bin
+cp -r bin ~/bin
 cp .ssh/* ~/.ssh/
 
 source ~/.bashrc
