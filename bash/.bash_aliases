@@ -48,7 +48,6 @@ alias oneline='git log --oneline'
 
 MIBA='/google/bin/releases/miba-team/public/miba_ssh_session --persistent'
 MIBA_CERT='/google/bin/releases/miba-team/public/miba_ssh_session --persistent -m kernel-development,kernel-development-serial,corevirt-team-testing -- /bin/true'
-#alias certs="gcert; $MIBA_CERT"
 alias certs="gcert -prodssh -m kernel-development,corevirt-team-testing"
 alias destroy_certs="gcert -s --lifetime=1s"
 
