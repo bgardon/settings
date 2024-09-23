@@ -1,9 +1,8 @@
 #!/bin/bash
 
-cp bash/bashrc ~/.bashrc
-cp vim/vimrc ~/.vimrc
-cp ondo.sh ~/
-cp tmux_setup.sh ~/
+cp bash/.* ~/
+cp vim/.vimrc ~/
+cp bin/* ~/bin/
 cp .ssh/* ~/.ssh/
 
 source ~/.bashrc
