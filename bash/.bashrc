@@ -34,7 +34,8 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-PS1="\[\033[38;5;30m\][\d \A] \[$(tput sgr0)\]\[\033[38;5;246m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;129m\]\w:\n> \[$(tput sgr0)\]"
+PS1="\[\033[38;5;30m\][\d \A] \[$(tput sgr0)\]\[\033[38;5;246m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;129m\]\w:\n> \[$(tput sgr0)\]"
+#PS1="\[\e]0;\u@\h: \w\a\]\[\033[38;5;30m\][\d \A] \[\]\[\033[38;5;246m\]\u\[\]\[\033[38;5;15m\] \[\]\[\]\[\033[38;5;129m\]\w:\n> \[\]"
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
